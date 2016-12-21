@@ -117,7 +117,7 @@ When called, the spy will return a "thenable" object which will return a promise
 Unlike stub, spy returns the `Promise` function by the `promised` variable, because the `spy` object should be used to do the spy work(checking calls).   
 
 ```js
-var spy = sinon.spy().resolves('foo');
+var spy1 = sinon.spy().resolves('foo');
 
 function test(spy) {
     return spy('hello')
@@ -127,7 +127,7 @@ function test(spy) {
     })
 }
 
-test(spy)
+test(spy1.promised)
 .then(function(value) {
     // value === 'foo'
     assert(spy.firstCall.args[0], 'hello')
@@ -148,7 +148,7 @@ Unlike stub, spy returns the `Promise` function by the `promised` variable, beca
 
 ```js
 // Example with string
-var spy = sinon.spy().rejects('foo');
+var spy1 = sinon.spy().rejects('foo');
 
 function test(spy) {
     return spy('hello')
@@ -158,7 +158,7 @@ function test(spy) {
     })
 }
 
-test(spy)
+test(spy1.promised)
 .then(function(value) {
     // value === 'baz'
     assert(spy.firstCall.args[0], 'hello')
@@ -175,7 +175,7 @@ function test(spy) {
     })
 }
 
-test(spy2)
+test(spy2.promised)
 .then(function(value) {
     // value === 'xab'
     assert(spy2.firstCall.args[0], 'world')
