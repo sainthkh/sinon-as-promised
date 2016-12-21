@@ -1,26 +1,26 @@
 {
-  "name": "sinon-as-promised",
-  "version": "4.0.2",
-  "description": "Sugar methods for using sinon.js stubs with promises",
+  "name": "sinon-with-promise",
+  "version": "1.0.0",
+  "description": "Sugar methods for using sinon.js stubs and spies with promises",
   "main": "index.js",
   "scripts": {
     "test": "standard && tape test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bendrucker/sinon-as-promised.git"
+    "url": "https://github.com/sainthkh/sinon-with-promise"
   },
   "keywords": [
     "sinon",
     "promises",
     "test"
   ],
-  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "author": "sainthkh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bendrucker/sinon-as-promised/issues"
+    "url": "https://github.com/sainthkh/sinon-with-promise/issues"
   },
-  "homepage": "https://github.com/bendrucker/sinon-as-promised",
+  "homepage": "https://github.com/sainthkh/sinon-with-promise/sinon-as-promised",
   "dependencies": {
     "create-thenable": "~1.0.0",
     "native-promise-only": "~0.8.1"

@@ -1,7 +1,8 @@
-sinon-as-promised [![Build Status](https://travis-ci.org/bendrucker/sinon-as-promised.svg?branch=master)](https://travis-ci.org/bendrucker/sinon-as-promised)
+sinon-with-promise
 =================
 
-> Extend [Sinon](https://github.com/cjohansen/sinon.js) stubs with promise stubbing methods.
+> Extend [Sinon](https://github.com/cjohansen/sinon.js) stubs and spies with promise stubbing methods.
+> This is the extension of [Sinon-as-promised](https://github.com/bendrucker/sinon-as-promised).
 
 ## Installing
 ```sh
