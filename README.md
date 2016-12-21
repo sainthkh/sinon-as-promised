@@ -6,10 +6,10 @@ sinon-with-promise
 
 ## Installing
 ```sh
-npm install sinon-as-promised
+npm install sinon-with-promise
 ```
 
-If you're using sinon-as-promised in the browser and are not using Browserify/Webpack, use [3.x](https://github.com/bendrucker/sinon-as-promised/tree/v3.0.1) or earlier.
+If you're using sinon-with-promise in the browser and are not using Browserify/Webpack, use [3.x](https://github.com/bendrucker/sinon-as-promised/tree/v3.0.1) or earlier.
 
 ## Usage
 
@@ -17,7 +17,7 @@ If you're using sinon-as-promised in the browser and are not using Browserify/We
 
 ```js
 var sinon  = require('sinon')
-require('sinon-as-promised')
+require('sinon-with-promise')
 
 sinon.stub().resolves('foo')().then(function (value) {
   assert.equal(value, 'foo')
@@ -28,7 +28,7 @@ sinon.stub().resolves('foo')().then(function (value) {
 
 ```js
 var sinon  = require('sinon')
-require('sinon-as-promised')
+require('sinon-with-promise')
 
 var spy = sinon.spy().resolves('foo')
 
@@ -42,12 +42,12 @@ assert(spy.firstCall.args[1], 'world')
 
 #### Using Bluebird
 
-You'll only need to require sinon-as-promised once. It attaches the appropriate stubbing functions which will then be available anywhere else you require sinon. It defaults to using native ES6 Promise [(or provides a polyfill)](https://github.com/getify/native-promise-only), but you can use another promise library if you'd like, as long as it exposes a constructor:
+You'll only need to require sinon-with-promise once. It attaches the appropriate stubbing functions which will then be available anywhere else you require sinon. It defaults to using native ES6 Promise [(or provides a polyfill)](https://github.com/getify/native-promise-only), but you can use another promise library if you'd like, as long as it exposes a constructor:
 
 ```js
 // Using Bluebird
 var Bluebird = require('bluebird')
-require('sinon-as-promised')(Bluebird)
+require('sinon-with-promise')(Bluebird)
 ```
 
 ## API

@@ -1,6 +1,6 @@
 {
   "name": "sinon-with-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sugar methods for using sinon.js stubs and spies with promises",
   "main": "index.js",
   "scripts": {
